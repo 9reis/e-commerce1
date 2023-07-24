@@ -1,6 +1,9 @@
 import 'package:ecommerce1/constants.dart';
 import 'package:ecommerce1/screens/components/splash_content.dart';
+import 'package:ecommerce1/size_config.dart';
 import 'package:flutter/material.dart';
+
+import 'default_button.dart';
 
 class Body extends StatefulWidget {
   const Body({super.key});
@@ -50,16 +53,27 @@ class _BodyState extends State<Body> {
                 ),
               ),
             ),
+            Spacer(),
             Expanded(
               flex: 2,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(
-                        splashData.length, (index) => buildDot(index)),
-                  )
-                ],
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: getProportionateScreenWidth(20)),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(
+                          splashData.length, (index) => buildDot(index)),
+                    ),
+                    Spacer(flex: 4),
+                    DefaultButton(
+                      text: 'Continue',
+                      press: () {},
+                    ),
+                    Spacer(flex: 2),
+                  ],
+                ),
               ),
             ),
           ],
