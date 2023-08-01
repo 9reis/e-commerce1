@@ -16,7 +16,7 @@ class DefaultButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: getProportionateScreenHeight(56),
+      height: 56, //getProportionateScreenHeight(56),
       child: ElevatedButton(
         child: Text(
           text,

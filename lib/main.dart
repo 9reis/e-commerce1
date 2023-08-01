@@ -1,5 +1,5 @@
-import 'package:ecommerce1/constants.dart';
-import 'package:ecommerce1/screens/spash_screen.dart';
+import 'package:ecommerce1/sign_in/sign_in_screen.dart';
+import 'package:ecommerce1/theme.dart';
 import 'package:ecommerce1/utils/routes.dart';
 import 'package:flutter/material.dart';
 
@@ -16,18 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        fontFamily: 'Muli',
-        textTheme: TextTheme(
-          bodyLarge: TextStyle(color: kTextColor),
-          bodyMedium: TextStyle(color: kTextColor),
-        ),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: theme(),
       //home: SplashScreen(),
-      initialRoute: SplashScreen.routeName,
+      initialRoute: SignInScreen.routeName,
+      // SplashScreen.routeName,
       routes: routes,
     );
   }
