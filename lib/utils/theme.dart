@@ -1,4 +1,4 @@
-import 'package:ecommerce1/constants.dart';
+import 'package:ecommerce1/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 ThemeData theme() {

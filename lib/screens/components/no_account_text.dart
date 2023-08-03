@@ -1,7 +1,7 @@
 import 'package:ecommerce1/screens/sign_up/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../utils/constants.dart';
 
 class NoAccountText extends StatelessWidget {
   const NoAccountText({

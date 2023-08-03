@@ -1,6 +1,7 @@
+import 'package:ecommerce1/screens/complete_profile/complete_profile_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 import '../../components/custom_suffix_icon.dart';
 import '../../components/default_button.dart';
 import '../../components/form_error.dart';
@@ -55,6 +56,7 @@ class _SignUpFormState extends State<SignUpForm> {
               press: () {
                 if (_formKey.currentState!.validate()) {
                   // Go to comprete profile page
+                  Navigator.pushNamed(context, CompleteProfileScreen.routeName);
                 }
               },
             ),
@@ -64,17 +66,20 @@ class _SignUpFormState extends State<SignUpForm> {
 
   TextFormField buildConfPasswordFormField() {
     return TextFormField(
-      onSaved: ((newValue) => confirmPassword = newValue),
+      onSaved: (newValue) => confirmPassword = newValue,
       onChanged: (value) {
-        if (password == confirmPassword) {
+        if (value.isNotEmpty) {
+          removeError(error: kPassNullError);
+        } else if (value.isNotEmpty && password == confirmPassword) {
           removeError(error: kMatchPassError);
         }
-        return null;
+        confirmPassword = value;
       },
       validator: (value) {
         if (value!.isEmpty) {
+          addError(error: kPassNullError);
           return '';
-        } else if (password != confirmPassword) {
+        } else if (password != value) {
           addError(error: kMatchPassError);
           return '';
         }

@@ -3,7 +3,7 @@ import 'package:ecommerce1/screens/components/form_error.dart';
 import 'package:ecommerce1/screens/components/no_account_text.dart';
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 import '../../components/custom_suffix_icon.dart';
 
 class Body extends StatelessWidget {

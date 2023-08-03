@@ -2,7 +2,7 @@ import 'package:ecommerce1/screens/forgot_password/forgot_password_screen.dart';
 import 'package:ecommerce1/screens/login_success/login_success_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../utils/constants.dart';
 import '../../screens/components/custom_suffix_icon.dart';
 import '../../screens/components/default_button.dart';
 import '../../screens/components/form_error.dart';
