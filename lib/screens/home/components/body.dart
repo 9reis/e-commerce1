@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'discount_banner.dart';
 import 'home_header.dart';
 
 class Body extends StatelessWidget {
@@ -13,10 +14,10 @@ class Body extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
-              height: size.height * 0.01,
-            ),
-            HomeHeader(size: size)
+            SizedBox(height: size.height * 0.02),
+            HomeHeader(),
+            SizedBox(height: size.height * 0.02),
+            DiscountBanner(size: size)
           ],
         ),
       ),

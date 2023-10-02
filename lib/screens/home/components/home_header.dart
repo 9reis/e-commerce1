@@ -6,13 +6,12 @@ import 'icon_btn_with_counter.dart';
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
     super.key,
-    required this.size,
   });
-
-  final Size size;
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
       child: Row(
