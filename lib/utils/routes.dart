@@ -6,6 +6,8 @@ import 'package:ecommerce1/screens/spash_screen.dart';
 import 'package:ecommerce1/sign_in/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../screens/home/home_screen.dart';
+
 //We use name route
 // All our routes will be available here
 final Map<String, WidgetBuilder> routes = {
@@ -15,4 +17,5 @@ final Map<String, WidgetBuilder> routes = {
   LoginSuccessScreen.routeName: (context) => LoginSuccessScreen(),
   SignUpScreen.routeName: (context) => SignUpScreen(),
   CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
+  HomeScreen.routeName: (context) => HomeScreen(),
 };

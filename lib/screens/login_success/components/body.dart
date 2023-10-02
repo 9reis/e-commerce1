@@ -1,7 +1,7 @@
 import 'package:ecommerce1/screens/components/default_button.dart';
 import 'package:flutter/material.dart';
 
-import '../../../sign_in/sign_in_screen.dart';
+import '../../home/home_screen.dart';
 
 class BodyLogin extends StatelessWidget {
   const BodyLogin({super.key});
@@ -24,10 +24,8 @@ class BodyLogin extends StatelessWidget {
         SizedBox(
           width: 300,
           child: DefaultButton(
-            text: 'Back to Home',
-            press: () => Navigator.pushNamedAndRemoveUntil(
-                context, SignInScreen.routeName, (route) => false),
-          ),
+              text: 'Back to Home',
+              press: () => Navigator.pushNamed(context, HomeScreen.routeName)),
         ),
         Spacer(),
       ],
