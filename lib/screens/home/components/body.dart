@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'categories.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
 
@@ -17,7 +18,9 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.02),
             HomeHeader(),
             SizedBox(height: size.height * 0.02),
-            DiscountBanner(size: size)
+            DiscountBanner(),
+            SizedBox(height: size.height * 0.03),
+            Categories()
           ],
         ),
       ),

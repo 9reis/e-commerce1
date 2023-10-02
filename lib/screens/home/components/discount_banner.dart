@@ -3,15 +3,14 @@ import 'package:flutter/material.dart';
 class DiscountBanner extends StatelessWidget {
   const DiscountBanner({
     super.key,
-    required this.size,
   });
-
-  final Size size;
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: size.width * 0.02),
+      margin: EdgeInsets.symmetric(horizontal: size.width * 0.04),
       padding: EdgeInsets.symmetric(
         horizontal: size.width * 0.04,
         vertical: size.width * 0.015,
