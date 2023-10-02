@@ -28,3 +28,15 @@ double getProportionateScreenWidth(double inputWidth) {
   // 375 is the layout width that designer use
   return (inputWidth / 375.0) * screenWidth;
 }
+
+double getWidth(double size, BuildContext context) {
+  final sizeWidth = MediaQuery.of(context).size.width * size;
+
+  return sizeWidth as double;
+}
+
+double getHeight(double size, BuildContext context) {
+  final sizeHeight = MediaQuery.of(context).size.height * size;
+
+  return sizeHeight as double;
+}

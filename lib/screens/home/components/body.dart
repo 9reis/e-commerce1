@@ -1,4 +1,7 @@
+import 'package:ecommerce1/screens/home/components/special_offers.dart';
 import 'package:flutter/material.dart';
+
+import 'package:ecommerce1/utils/size_config.dart';
 
 import 'categories.dart';
 import 'discount_banner.dart';
@@ -9,18 +12,18 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-
     return SafeArea(
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: size.height * 0.02),
+            SizedBox(height: getHeight(0.02, context)),
             HomeHeader(),
-            SizedBox(height: size.height * 0.02),
+            SizedBox(height: getHeight(0.02, context)),
             DiscountBanner(),
-            SizedBox(height: size.height * 0.03),
-            Categories()
+            SizedBox(height: getHeight(0.03, context)),
+            Categories(),
+            SizedBox(height: getHeight(0.03, context)),
+            SpecialOffers()
           ],
         ),
       ),
