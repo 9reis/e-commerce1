@@ -16,7 +16,7 @@ class SpecialOffers extends StatelessWidget {
           text: 'Special for you',
           press: () {},
         ),
-        SizedBox(height: getHeight(0.03, context)),
+        SizedBox(height: getHeight(0.02, context)),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
@@ -83,8 +83,8 @@ class SpecialOfferCard extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: getWidth(0.01, context),
-                    vertical: getWidth(0.01, context)),
+                    horizontal: getWidth(0.03, context),
+                    vertical: getWidth(0.02, context)),
                 child: Text.rich(
                   TextSpan(
                     style: TextStyle(

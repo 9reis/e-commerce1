@@ -1,6 +1,7 @@
-import 'package:ecommerce1/screens/home/components/special_offers.dart';
+import 'package:ecommerce1/screens/home/components/popular_product.dart';
 import 'package:flutter/material.dart';
 
+import 'package:ecommerce1/screens/home/components/special_offers.dart';
 import 'package:ecommerce1/utils/size_config.dart';
 
 import 'categories.dart';
@@ -23,7 +24,9 @@ class Body extends StatelessWidget {
             SizedBox(height: getHeight(0.03, context)),
             Categories(),
             SizedBox(height: getHeight(0.03, context)),
-            SpecialOffers()
+            SpecialOffers(),
+            SizedBox(height: getHeight(0.03, context)),
+            PopularProduct()
           ],
         ),
       ),
