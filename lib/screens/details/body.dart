@@ -1,7 +1,7 @@
 import 'package:ecommerce1/screens/components/default_button.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/product.dart';
+import '../../models/Product.dart';
 import 'components/color_dots.dart';
 import 'components/product_decription.dart';
 import 'components/product_images.dart';

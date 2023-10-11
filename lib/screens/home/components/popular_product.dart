@@ -2,7 +2,7 @@ import 'package:ecommerce1/screens/details/details_screen.dart';
 import 'package:ecommerce1/screens/home/components/section_title.dart';
 import 'package:flutter/material.dart';
 
-import '../../../models/product.dart';
+import '../../../models/Product.dart';
 import '../../../utils/size_config.dart';
 import '../../components/product_card.dart';
 

@@ -2,7 +2,7 @@ import 'package:ecommerce1/screens/details/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../models/product.dart';
+import '../../models/Product.dart';
 
 class DetailsScreen extends StatelessWidget {
   static String routeName = '/details';

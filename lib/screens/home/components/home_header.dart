@@ -1,3 +1,4 @@
+import 'package:ecommerce1/screens/cart/cart_screen.dart';
 import 'package:ecommerce1/screens/home/components/search_field.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,11 @@ class HomeHeader extends StatelessWidget {
           SearchField(size: size),
           IconBtnWithCounter(
             svgSrc: 'assets/icons/Cart Icon.svg',
-            press: () {},
+            press: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) {
+                return CartScreen();
+              }),
+            ),
           ),
           IconBtnWithCounter(
             svgSrc: 'assets/icons/Bell.svg',
