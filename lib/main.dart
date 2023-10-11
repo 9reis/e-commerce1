@@ -1,4 +1,4 @@
-import 'package:ecommerce1/sign_in/sign_in_screen.dart';
+import 'package:ecommerce1/screens/profile/profile_screen.dart';
 import 'package:ecommerce1/utils/theme.dart';
 import 'package:ecommerce1/utils/routes.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: theme(),
       //home: SplashScreen(),
-      initialRoute: SignInScreen.routeName,
+      initialRoute: ProfileScreen.routeName,
       // SplashScreen.routeName,
       routes: routes,
     );
